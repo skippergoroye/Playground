@@ -8,6 +8,7 @@ import { Dashboard } from './pages'
 import ApplyMeasurementGuide from './components/DashboardModalGuide/ApplyMeasurementGuide'
 import AddMeasurementGuide from './components/DashboardModalGuide/AddMeasurementGuide'
 import CreateMeasurementGuide from './components/DashboardModalGuide/CreateMeasurementGuide'
+import DashboardGuide from './components/DashboardGuide/DashboardGuide'
 
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
       <Routes>
          <Route path="/addcustomer" element={<AddCustomerModal />} />
          <Route path="/dashboard" element={<Dashboard />} />
-         <Route path="/text" element={<AddMeasurementGuide />} />
+         <Route path="/text" element={<DashboardGuide />} />
       </Routes>
     </Router>
     
