@@ -1,4 +1,4 @@
-import AddCustomerModal from "./AddCustomerModal";
+import AddCustomerModal from "./AddCustomerModal/AddCustomerModal";
 import ChakraTest from "./ChakraTest";
 
 
