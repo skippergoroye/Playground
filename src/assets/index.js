@@ -3,6 +3,9 @@ import ApplyMeasurement from './apply-measurement.png'
 import CreateMeasurement from './create-measurement.png'
 import PlusIcon from "./plus-icon.png"
 import UpArrowIcon from './arrowUp-2.svg'
+import Profile from './profile.png'
+import AutoMeasurement from './auto-measurement.png'
+import ManualMeasurement from './manuel-measurement.png'
 
 
 
@@ -12,5 +15,8 @@ export {
     ApplyMeasurement,
     CreateMeasurement,
     PlusIcon,
-    UpArrowIcon
+    UpArrowIcon,
+    Profile,
+    AutoMeasurement,
+    ManualMeasurement
 }
