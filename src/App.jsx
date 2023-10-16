@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ChakraTest from './components/ChakraTest'
 import { Box, Text, Heading } from '@chakra-ui/react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { AddCustomerModal, DashboardGuide, ButtonTabs, Textf } from './components'
+import { AddCustomerModal, DashboardGuide, ButtonTabs, ClientProfile, RollingText, Textf, AddProfile, ImageUpload, Avater, UseMemo, Test } from './components'
 import { Dashboard } from './pages'
 
 
@@ -12,7 +12,6 @@ const App = () => {
  
   
  
-
   return (
      <Router>
       {/* <h1>welcome</h1>  */}
@@ -21,7 +20,14 @@ const App = () => {
          <Route path="/dashboard" element={<Dashboard />} />
          <Route path="/dashboardguide" element={<DashboardGuide />} />
          <Route path="/buttontabs" element={<ButtonTabs />} />
-         <Route path="/text" element={<Textf />} />
+         <Route path="/clientprofile" element={<ClientProfile />} />
+         <Route path="/rollingtext" element={<RollingText />} />
+         <Route path="/addprofile" element={<AddProfile />} />
+         <Route path="/imageupload" element={<ImageUpload />} />
+         <Route path="/avater" element={<Avater />} />
+         <Route path="/textground" element={<Test />} />
+         <Route path="/usememo" element={<UseMemo />} />
+         <Route path="/textf" element={<Textf />} />
       </Routes>
     </Router> 
    

@@ -1,6 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+.roller{
+  height:55px;
+  line-height: 64px;
+  position: relative;
+  overflow: hidden; 
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 400px;
+  margin-top: -20px;
+   */
+  color: whit;
+}
+
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 10s infinite;  
+}
+
+@keyframes slide {
+  0%{
+    top:0;
+  }
+  50%{
+    top: -90px; 
+    color: yellow 
+  }
+  55%{
+    top: -128px;
+    color: purple
+  }
+  75%{
+    top: -196px;
+    color: green
+  }
+  100%{
+    top: -196px;
+    color: green
+  }
+}
+
+
+
+
