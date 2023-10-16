@@ -9,6 +9,7 @@ import AddProfile from "./AddProfile/AddProfile";
 import ImageUpload from "./ImageUpload/ImageUpload";
 import Avater from "./Avater/Avater";
 import UseMemo from "./UseMemo/UseMemo";
+import SendRequestPopUp from "./SendRequestPopUp/SendRequestPopUp"
 import Test from "./Test.jsx"
 
 
@@ -26,5 +27,6 @@ export  {
     ImageUpload,
     Avater,
     UseMemo,
+    SendRequestPopUp,
     Test
 }

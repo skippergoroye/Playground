@@ -3,6 +3,7 @@ import { useDisclosure } from '@chakra-ui/react'
 import { Box, Flex, Button } from "@chakra-ui/react";
 import { AddIcon } from "@chakra-ui/icons";
 import { AddCustomerModal } from "../components";
+import { SendRequestPopUp } from "../components"
 
 const Dashboard = () => {
   const { isOpen, onClose, onOpen } = useDisclosure()
@@ -17,17 +18,20 @@ const Dashboard = () => {
 
       <AddCustomerModal isOpen={isOpen} onClose={onClose}  />
 
-      <Flex direction="row" align="right" justify="end" mx="auto" py="30px">
-        <Button
-          leftIcon={<AddIcon />}
-          bg="transparent"
-          color="#b7076b"
-          border={"1px solid #000000"}
-          onClick={onOpen}
-        >
-          Customer
-        </Button>
-      </Flex>
+
+      <Box>
+        <Flex direction="row" align="right" justify="end" mx="auto" py="30px">
+          <Button
+            leftIcon={<AddIcon />}
+            bg="transparent"
+            color="#b7076b"
+            border={"1px solid #000000"}
+            onClick={onOpen}
+          >
+            Customer
+          </Button>
+        </Flex>
+      </Box>
     </div>
   );
 };

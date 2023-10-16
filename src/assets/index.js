@@ -6,6 +6,9 @@ import UpArrowIcon from './arrowUp-2.svg'
 import Profile from './profile.png'
 import AutoMeasurement from './auto-measurement.png'
 import ManualMeasurement from './manuel-measurement.png'
+import WhatsApp from "./whatsapp.png"
+import Gmail from "./gmail.png"
+import Contact from "./contact.png"
 
 
 
@@ -18,5 +21,8 @@ export {
     UpArrowIcon,
     Profile,
     AutoMeasurement,
-    ManualMeasurement
+    ManualMeasurement,
+    WhatsApp,
+    Gmail,
+    Contact
 }
