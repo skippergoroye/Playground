@@ -13,9 +13,15 @@ import {
     Stack,
     Image
   } from '@chakra-ui/react'
-  import { WhatsApp, Gmail, Contact } from "../../assets"
+import React, { useState } from "react"
+import { WhatsApp, Gmail, Contact } from "../../assets"
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const SendRequestPopUp = ({ isOpenProps, onCloseProps }) => {
+  const [value, setValue] = useState('')
+  const [copied, setCopied] = useState(false)
+
+
     
 
 
@@ -27,12 +33,12 @@ const SendRequestPopUp = ({ isOpenProps, onCloseProps }) => {
       <ModalCloseButton />
       <ModalBody>
         <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            w="411px"
-            maxW="100%"
-            >
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          w="411px"
+          maxW="100%"
+        >
             <Input
                 size="sm"
                 w="100%"
@@ -43,20 +49,29 @@ const SendRequestPopUp = ({ isOpenProps, onCloseProps }) => {
                 borderRadius="8px"
                 borderRight="0px"
                 borderRightRadius="0px"
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
             />
-            <Button
-                bgColor="#5773FF"
-                size="sm"
-                color="#fff"
-                fontSize="10px"
-                borderRadius="8px"
-                boxShadow='xs'
-                w="20%"
-                marginLeft="-10px"
-                _hover={{ bgColor: "#030bfc" }}
-            >
-                Copy Link
-            </Button>
+
+            <CopyToClipboard text={value} onCopy={() => setCopied(true)}>
+              <Button
+                  bgColor="#5773FF"
+                  size="sm"
+                  color="#fff"
+                  fontSize="10px"
+                  borderRadius="8px"
+                  boxShadow='xs'
+                  w="20%"
+                  marginLeft="-10px"
+                  _hover={{ bgColor: "#030bfc" }}
+              >
+                  Copy Link
+              </Button>
+            </CopyToClipboard>
+            {copied ? <span style={{color: "#b7076b"}}>Copied</span> :  null}
+
+
+            
         </Box>
         <Box mt="15px">
             <Text color="#7F8691" fontSize="16px" fontWeight="400" fontFamily="font-Avenir">or share to</Text>
