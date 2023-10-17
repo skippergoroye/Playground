@@ -22,6 +22,16 @@ const SendRequestPopUp = ({ isOpenProps, onCloseProps }) => {
   const [copied, setCopied] = useState(false)
 
 
+  const handleCopy = () => {
+    if(!copied){
+      setCopied(true)
+      setTimeout(() => {
+        setCopied(false)
+      }, 1500)
+    } 
+  }
+
+
     
 
 
@@ -53,7 +63,7 @@ const SendRequestPopUp = ({ isOpenProps, onCloseProps }) => {
                 onChange={(e) => setValue(e.target.value)}
             />
 
-            <CopyToClipboard text={value} onCopy={() => setCopied(true)}>
+            <CopyToClipboard text={value} onCopy={() => handleCopy()}>
               <Button
                   bgColor="#5773FF"
                   size="sm"
