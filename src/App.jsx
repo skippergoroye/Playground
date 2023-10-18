@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ChakraTest from './components/ChakraTest'
 import { Box, Text, Heading } from '@chakra-ui/react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { AddCustomerModal, DashboardGuide, ButtonTabs, ClientProfile, RollingText, Textf, AddProfile, ImageUpload, Avater, UseMemo, SendRequestPopUp, Test } from './components'
+import { AddCustomerModal, DashboardGuide, ButtonTabs, ClientProfile, RollingText, Textf, AddProfile, ImageUpload, Avater, UseMemo, SendRequestPopUp, CreateUnauthenticatedMeasurement, Test } from './components'
 import { Dashboard, Dashboardtwo } from './pages'
 
 
@@ -28,6 +28,7 @@ const App = () => {
          <Route path="/avater" element={<Avater />} />
          <Route path="/textground" element={<Test />} />
          <Route path="/usememo" element={<UseMemo />} />
+         <Route path="/measurement/create/:tailorId" element={<CreateUnauthenticatedMeasurement />} />
          <Route path="/sendrequestpopup" element={<SendRequestPopUp />} />
          <Route path="/textf" element={<Textf />} />
       </Routes>

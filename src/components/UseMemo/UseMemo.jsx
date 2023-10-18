@@ -1,5 +1,5 @@
 import React, { useState, useMemo} from 'react'
-import Measurements from '../../data/data'
+import { Measurements } from '../../data/data'
 
 
   const columns = [
@@ -38,31 +38,31 @@ const UseMemo = () => {
   // console.log(measurementData)
 
 
-  const data = measurementData.map(item => {
-    const clientData = item.client;
-    const measurementsData = item.measurements;
+//   const data = measurementData.map(item => {
+//     const clientData = item.client;
+//     const measurementsData = item.measurements;
 
-    const clientName = `${clientData.firstName} ${clientData.lastName}`;
-    const userEmail = clientData.email;
-    const measurementName = measurementsData.name;
-    const measurementMethod = measurementsData.method;
-    const measurementDate = measurementsData.date;
-    const measurementGender = measurementsData.gender;
-    const measurementId = measurementsData.measurementId;
-    const outfitBuyerId = measurementsData.outfitBuyerId;
+//     const clientName = `${clientData.firstName} ${clientData.lastName}`;
+//     const userEmail = clientData.email;
+//     const measurementName = measurementsData.name;
+//     const measurementMethod = measurementsData.method;
+//     const measurementDate = measurementsData.date;
+//     const measurementGender = measurementsData.gender;
+//     const measurementId = measurementsData.measurementId;
+//     const outfitBuyerId = measurementsData.outfitBuyerId;
 
 
-    return {
-        clientName,
-        userEmail,
-        measurementName,
-        measurementMethod,
-        measurementGender,
-        measurementDate,
-        measurementId,
-        outfitBuyerId
-    };
-});
+//     return {
+//         clientName,
+//         userEmail,
+//         measurementName,
+//         measurementMethod,
+//         measurementGender,
+//         measurementDate,
+//         measurementId,
+//         outfitBuyerId
+//     };
+// });
 
 
 

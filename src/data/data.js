@@ -1,4 +1,4 @@
-const Measurements = [
+export const Measurements = [
     {
         "client": {
             "role": [
@@ -400,4 +400,26 @@ const Measurements = [
     }
 ]
 
-export default Measurements
+
+
+export const profile = [
+    {
+        customerCategory :"male",
+        email : "skippergoroye@gmail.com",
+        firstName : "Oluwatosin",
+        gender: "female",
+        isConfirmed : true,
+        isVetted: "Not Applied",
+        lastName: "Adegoroye",
+        location : "lagod",
+        phoneNumber: "+2349072665384",
+        profileImage : {secure_url: 'https://res.cloudinary.com/fitted/image/upload/v1695643574/profile_images/jdngulrchbsmgzrximlj.png', public_id: 'profile_images/jdngulrchbsmgzrximlj'},
+        role : ['tailor', 'outfit-buyer'],
+        storeName : "skipperstore",
+        style : ['street & casual wear'],
+        tailorApplication: false,
+        token: "eaaca719c6e367049a891df29e8de24b8d69dc5f",
+        verified: true,
+        _id: "64e7a31609b8a00020d1bc97",
+    }
+]

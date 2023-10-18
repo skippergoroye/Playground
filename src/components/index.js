@@ -9,7 +9,8 @@ import AddProfile from "./AddProfile/AddProfile";
 import ImageUpload from "./ImageUpload/ImageUpload";
 import Avater from "./Avater/Avater";
 import UseMemo from "./UseMemo/UseMemo";
-import SendRequestPopUp from "./SendRequestPopUp/SendRequestPopUp"
+import SendRequestPopUp from "./SendRequestPopUp/SendRequestPopUp";
+import CreateUnauthenticatedMeasurement from "./CreateUnauthenticatedMeasurement/CreateUnauthenticatedMeasurement"
 import Test from "./Test.jsx"
 
 
@@ -28,5 +29,6 @@ export  {
     Avater,
     UseMemo,
     SendRequestPopUp,
+    CreateUnauthenticatedMeasurement,
     Test
 }
